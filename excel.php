@@ -72,7 +72,7 @@ foreach ($namedDataArray as $result) {
 		<td><?php echo $result["LAT"];?></td>
 		<td><?php echo $result["LONG"];?></td>
 		<td><?php echo $result["LINK"];?></td>
-		//<td><?php echo $result["Used"];?></td>
+		
 	  </tr>
 <?php
 }
