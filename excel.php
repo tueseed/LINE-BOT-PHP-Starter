@@ -13,7 +13,7 @@ $objReader = PHPExcel_IOFactory::createReader($inputFileType);
 $objReader->setReadDataOnly(true);  
 $objPHPExcel = $objReader->load($inputFileName);  
 
-/*
+
 // for No header
 $objWorksheet = $objPHPExcel->setActiveSheetIndex(0);
 $highestRow = $objWorksheet->getHighestRow();
@@ -28,7 +28,7 @@ for ($row = 1; $row <= $highestRow; ++$row) {
         $namedDataArray[$r] = $dataRow[$row];
     }
 }
-*/
+
 
 $objWorksheet = $objPHPExcel->setActiveSheetIndex(0);
 $highestRow = $objWorksheet->getHighestRow();
