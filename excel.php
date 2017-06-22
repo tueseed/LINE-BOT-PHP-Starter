@@ -67,12 +67,12 @@ for ($row = 2; $row <= $highestRow; ++$row) {
 foreach ($namedDataArray as $result) {
 ?>
 	  <tr>
-		<td><?php echo $result["CustomerID"];?></td>
-		<td><?php echo $result["Name"];?></td>
-		<td><?php echo $result["Email"];?></td>
-		<td><?php echo $result["CountryCode"];?></td>
-		<td><?php echo $result["Budget"];?></td>
-		<td><?php echo $result["Used"];?></td>
+		<td><?php echo $result["FACILITYID"];?></td>
+		<td><?php echo $result["FEEDERID"];?></td>
+		<td><?php echo $result["LAT"];?></td>
+		<td><?php echo $result["LONG"];?></td>
+		<td><?php echo $result["LINK"];?></td>
+		//<td><?php echo $result["Used"];?></td>
 	  </tr>
 <?php
 }
