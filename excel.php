@@ -7,7 +7,7 @@ require_once 'Classes/PHPExcel.php';
 include 'Classes/PHPExcel/IOFactory.php';
 
 
-$inputFileName = "LATLONG.xlsx";  
+$inputFileName = "LATLONG.xls";  
 $inputFileType = PHPExcel_IOFactory::identify($inputFileName);  
 $objReader = PHPExcel_IOFactory::createReader($inputFileType);  
 $objReader->setReadDataOnly(true);  
