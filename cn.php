@@ -15,15 +15,15 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 			
-            $csv = array_map('str_getcsv', file('sta.csv'));
-            $findName = iconv("utf-8","tis-620",$text);
+           // $csv = array_map('str_getcsv', file('sta.csv'));
+           // $findName = iconv("utf-8","tis-620",$text);
 			//$findName = strtoupper($findName);
-            foreach($csv as $values)
-            {
+//            foreach($csv as $values)
+  //          {
 		    
-             if($values[1]==$findName or $values[2]==$findName)   // index 0 contains the name
-                 $Myd = iconv("tis-620","utf-8",$values[0]);  // index 1 contains the googlemap link    
-			 }
+    //         if($values[1]==$findName or $values[2]==$findName)   // index 0 contains the name
+      //           $Myd = iconv("tis-620","utf-8",$values[0]);  // index 1 contains the googlemap link    
+	//		 }
 			 
                 // Build message to reply back
 			$messages = [
