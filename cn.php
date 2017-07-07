@@ -29,6 +29,11 @@ if (!is_null($events['events'])) {
 			$messages = [
 				//'type' => 'text',
 				//'text' => "dfdkakl;j"//$Myd    //."  [".$KVA." KVA]"
+				'type' => 'template',
+				'altText' => "this is a buttons template",				
+				'template'{
+				
+				
 				'type' => 'buttons',
 				'text' => "กรุณาเลือก",
 				"actions"= [
@@ -43,7 +48,7 @@ if (!is_null($events['events'])) {
                                               "text": "action=add&itemid=124"
                                                  },
                                                       ]
-				
+				}
 				
 			];
 			// Make a POST Request to Messaging API to reply to sender
