@@ -32,20 +32,18 @@ if (!is_null($events['events'])) {
 				'type' => 'template',
 				'altText' => "this is a buttons template",				
 				'template'{
-				
-				
 				'type' => 'buttons',
 				'text' => "กรุณาเลือก",
 				"actions"= [
                                              {
-                                              "type": "message",
-                                              "label": "Buy",
-                                              "text": "action=buy&itemid=123"
+                                              "type"=> "message",
+                                              "label"=> "Buy",
+                                              "text"=> "action=buy&itemid=123"
                                                  },
                                                {
-                                               "type": "message",
-                                               "label": "Add to cart",
-                                              "text": "action=add&itemid=124"
+                                               "type"=> "message",
+                                               "label"=> "Add to cart",
+                                              "text"=> "action=add&itemid=124"
                                                  },
                                                       ]
 				}
