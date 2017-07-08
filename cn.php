@@ -27,26 +27,26 @@ if (!is_null($events['events'])) {
 			 
                 // Build message to reply back
 			$messages = [
-				//'type' => 'text',
-				//'text' => "dfdkakl;j"//$Myd    //."  [".$KVA." KVA]"
-				'type' => 'template',
-				'altText' => "this is a buttons template",				
-				'template'{
-				'type' => 'buttons',
-				'text' => "กรุณาเลือก",
-				'actions'= [
+				'type' => 'text',
+				'text' => "dfdkakl;j"//$Myd    //."  [".$KVA." KVA]"
+				//'type' => 'template',
+				//'altText' => "this is a buttons template",				
+				//'template'{
+			//	'type' => 'buttons',
+			//	'text' => "กรุณาเลือก",
+			//	'actions'= [
                                              {
-                                              'type'=> 'message',
-                                              'label'=> "Buy",
-                                              'text'=> "action=buy&itemid=123"
-                                                 },
-                                               {
-                                               'type'=> 'message',
-                                               'label'=> "Add to cart",
-                                              'text'=> "action=add&itemid=124"
-                                                 },
-                                                      ];
-				}
+                            //                  'type'=> 'message',
+                         //                     'label'=> "Buy",
+                            //                  'text'=> "action=buy&itemid=123"
+                        //                         },
+                                //               {
+                                  //             'type'=> 'message',
+                                    //           'label'=> "Add to cart",
+                                      //        'text'=> "action=add&itemid=124"
+                                        //         },
+                                          //            ];
+			//	}
 				
 			];
 			// Make a POST Request to Messaging API to reply to sender
