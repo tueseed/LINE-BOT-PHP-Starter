@@ -45,7 +45,7 @@ if (!is_null($events['events'])) {
                                                'label'=> "Add to cart",
                                               'text'=> "action=add&itemid=124"
                                                  },
-                                                      ]
+                                                      ];
 				}
 				
 			];
