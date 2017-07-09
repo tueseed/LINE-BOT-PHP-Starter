@@ -42,55 +42,20 @@ if (!is_null($events['events'])) {
                                                     'actions'=>array (
                                                          array(
                                                              'type'=> 'message',
-                                                                  'label'=> 'หมวดที่ 1',
-                                                                   'text'=> '8205'
+                                                                  'label'=> 'หมวดที่ 1 การสำรวจออกแบบ การคิดค่าใช้จ่ายและการประมาณการ',
+                                                                   'text'=> 'หมวดที่ 1'
                                                                        ),
                                                           array(
                                                                 'type'=> 'message',
-                                                                'label'=> 'หมวดที่ 2',
-                                                                'text'=> 'no'
+                                                                'label'=> 'หมวดที่ 2 การดำเนินการก่อสร้าง ปรับปรุงขยายเขตระบบไฟฟ้า',
+                                                                'text'=> 'หมวดที่ 2'
                                                                 ),
 							     array(
                                                                 'type'=> 'message',
-                                                                'label'=> 'หมวดที่ 3',
-                                                                'text'=> 'no'
-                                                                ),
-							    array(
-                                                                'type'=> 'message',
-                                                                'label'=> 'หมวดที่ 3',
-                                                                'text'=> 'no'
-                                                                ),
-							      array(
-                                                                'type'=> 'message',
-                                                                'label'=> 'หมวดที่ 3',
-                                                                'text'=> 'no'
-                                                                ),
-							      array(
-                                                                'type'=> 'message',
-                                                                'label'=> 'หมวดที่ 3',
-                                                                'text'=> 'no'
-                                                                ),
-							      array(
-                                                                'type'=> 'message',
-                                                                'label'=> 'หมวดที่ 3',
-                                                                'text'=> 'no'
-                                                                ),
-							      array(
-                                                                'type'=> 'message',
-                                                                'label'=> 'หมวดที่ 3',
-                                                                'text'=> 'no'
-                                                                ),
-							      array(
-                                                                'type'=> 'message',
-                                                                'label'=> 'หมวดที่ 3',
-                                                                'text'=> 'no'
-                                                                ),
-							      array(
-                                                                'type'=> 'message',
-                                                                'label'=> 'หมวดที่ 3',
-                                                                'text'=> 'no'
+                                                                'label'=> 'หมวดที่ 3 อำนาจการอนุมัติ',
+                                                                'text'=> 'หมวดที่ 3'
                                                                 )
-                                                             )
+							  )
                                                             )
                                             );   
 			
