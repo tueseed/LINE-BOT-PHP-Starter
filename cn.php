@@ -35,7 +35,7 @@ if (!is_null($events['events'])) {
 		                // Build message to reply back
 			$messages = array(
 					 'type'=> 'template',
-                                          //'altText'=> 'ระเบียบก่อสร้างปี 59 กรุณาเลือกหมวด',
+                                          'altText'=> 'ระเบียบก่อสร้างปี 59 กรุณาเลือกหมวด',
                                            'template'=>array (
                                               'type'=> 'buttons',
                                                  'text'=> 'ระเบียบก่อสร้างปี 59 กรุณาเลือกหมวด',
