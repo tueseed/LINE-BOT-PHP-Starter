@@ -39,8 +39,8 @@ if (!is_null($events['events'])) {
                                            'template'=>array (
                                                              'type'=> 'carousel',
                                                 // 'text'=> 'ระเบียบก่อสร้างปี 59 กรุณาเลือกหมวด',
-						             'columns'=> [
-								     {
+						             'columns'=> array(
+								     (
 								    'text'=> 'ระเบียบก่อสร้างปี 59 กรุณาเลือกหมวด',
                                                                     'actions'=>array (
                                                                                       array(
@@ -59,8 +59,8 @@ if (!is_null($events['events'])) {
                                                                                                'text'=> 'หมวดที่ 3'
                                                                                              )
 							                              )//action col1
-								     },
-								     {
+								     ),
+								     (
 								    'text'=> 'ระเบียบก่อสร้างปี 59 กรุณาเลือกหมวด',
                                                                     'actions'=>array (
                                                                                       array(
@@ -79,8 +79,8 @@ if (!is_null($events['events'])) {
                                                                                                'text'=> 'หมวดที่ 3'
                                                                                              )
 							                              )//action col1
-								     }
-								     ]
+								     )
+								     ) //array col
                                                             )//array templete
 				                    
                                             ); //array messages 
