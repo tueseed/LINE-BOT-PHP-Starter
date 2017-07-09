@@ -25,8 +25,8 @@ if (!is_null($events['events'])) {
              if($values[1]==$findName or $values[2]==$findName)   // index 0 contains the name
                  $Myd = iconv("tis-620","utf-8",$values[0]);  // index 1 contains the googlemap link    
 			 }
-			if ($Myd=="")
-			{
+			//if ($Myd=="")
+			//{
 				 
                 // Build message to reply back
 			$messages = array(
@@ -49,12 +49,12 @@ if (!is_null($events['events'])) {
      )
      )
         );   
-			 };
-			$messages[
-				'type' => 'text',
-				'text' => $Myd    //."  [".$KVA." KVA]"
+		//	 };
+			//$messages[
+			//	'type' => 'text',
+			//	'text' => $Myd    //."  [".$KVA." KVA]"
 						
-			];
+		//	];
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
