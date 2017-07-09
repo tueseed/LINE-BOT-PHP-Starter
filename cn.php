@@ -41,44 +41,33 @@ if (!is_null($events['events'])) {
                                                 // 'text'=> 'ระเบียบก่อสร้างปี 59 กรุณาเลือกหมวด',
 						             'columns'=> array(
 								   array(
-								    'text'=> 'ระเบียบก่อสร้างปี 59 กรุณาเลือกหมวด',
+								    'text'=> 'หมวดที่1 สำรวจออกแบบ ประมาณการ',
                                                                     'actions'=>array (
                                                                                       array(
                                                                                             'type'=> 'message',
-                                                                                            'label'=> 'หมวดที่1',
+                                                                                            'label'=> 'เลือก',
                                                                                             'text'=> 'หมวดที่ 1'
-                                                                                            ),
-                                                                                      array(
-                                                                                            'type'=> 'message',
-                                                                                            'label'=> 'หมวดที่2',
-                                                                                            'text'=> 'หมวดที่ 2'
-                                                                                            ),
-							                              array(
-                                                                                            'type'=> 'message',
-                                                                                             'label'=> 'หมวดที่3',
-                                                                                               'text'=> 'หมวดที่ 3'
-                                                                                             )
-							                              )//action col1
+                                                                                            )
+                                                                                      )//action col1
 								     ),
 								     array(
-								    'text'=> 'ระเบียบก่อสร้างปี 59 กรุณาเลือกหมวด',
+								    'text'=> 'หมวดที่2 การดำเนินการก่อสร้าง',
                                                                     'actions'=>array (
                                                                                       array(
                                                                                             'type'=> 'message',
-                                                                                            'label'=> 'หมวดที่1',
-                                                                                            'text'=> 'หมวดที่ 1'
-                                                                                            ),
+                                                                                            'label'=> 'เลือก',
+                                                                                            'text'=> 'หมวดที่ 2'
+                                                                                            )
+                                                                                      )//action col2
+							              array(
+								    'text'=> 'หมวดที่3 อำนาจอนุมัติ',
+                                                                    'actions'=>array (
                                                                                       array(
                                                                                             'type'=> 'message',
-                                                                                            'label'=> 'หมวดที่2',
-                                                                                            'text'=> 'หมวดที่ 2'
-                                                                                            ),
-							                              array(
-                                                                                            'type'=> 'message',
-                                                                                             'label'=> 'หมวดที่3',
-                                                                                               'text'=> 'หมวดที่ 3'
-                                                                                             )
-							                              )//action col1
+                                                                                            'label'=> 'เลือก',
+                                                                                            'text'=> 'หมวดที่ 3'
+                                                                                            )
+                                                                                      )//action col2
 								     )
 								     ) //array col
                                                             )//array templete
