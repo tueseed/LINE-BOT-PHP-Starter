@@ -25,10 +25,8 @@ if (!is_null($events['events'])) {
              if($values[1]==$findName or $values[2]==$findName)   // index 0 contains the name
                  $Myd = iconv("tis-620","utf-8",$values[0]);  // index 1 contains the googlemap link    
 			 }
-			 if($Myd==1){ 
-			    break;
-			}
-			 if ($Myd==""){
+			if ($Myd=="")
+			{
 				 
                 // Build message to reply back
 			$messages = array(
@@ -51,7 +49,7 @@ if (!is_null($events['events'])) {
      )
      )
         );   
-			 }
+			 };
 			$messages[
 				'type' => 'text',
 				'text' => $Myd    //."  [".$KVA." KVA]"
