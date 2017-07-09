@@ -1,4 +1,5 @@
 <?php
+//$access_token = 'tdzLYf9xfGIqTskPJrg1oK1BkchAQvgfuICDhheJJ65GvMxKIeL29rO5PLkYVbXLEiBFllEQC96ml4ZE69XM7TF40477TPfGBVmqmsGi67YNeaTv94J7kkPhlWl/rf1LO5ESck74M6zkhl057mCG0AdB04t89/1O/w1cDnyilFU=';
 $access_token = '0RwNgVKTtKL8buW0dJpvxx5e5sRgKt1r9ntdO+YkiZHdlZb5f/F5PI2YQphJJo243Ji/Bh51fGVTuu1n/piK4+gDLxtf2mj+Xrq7okZBvsMgmr41tuMpa+vNP9QFet0wZgMYnfgxWOmkLbebV7VJXQdB04t89/1O/w1cDnyilFU=';
 // Get POST body content
 $content = file_get_contents('php://input');
@@ -15,40 +16,34 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 			
-           // $csv = array_map('str_getcsv', file('sta.csv'));
-           // $findName = iconv("utf-8","tis-620",$text);
+            $csv = array_map('str_getcsv', file('sta.csv'));
+            $findName = iconv("utf-8","tis-620",$text);
 			//$findName = strtoupper($findName);
-//            foreach($csv as $values)
-  //          {
+            foreach($csv as $values)
+            {
 		    
-    //         if($values[1]==$findName or $values[2]==$findName)   // index 0 contains the name
-      //           $Myd = iconv("tis-620","utf-8",$values[0]);  // index 1 contains the googlemap link    
-	//		 }
-			 
+             if($values[1]==$findName or $values[2]==$findName)   // index 0 contains the name
+                 $Myd = iconv("tis-620","utf-8",$values[0]);  // index 1 contains the googlemap link    
+			 }
+			 if($Myd==1){ 
+			    break;
+			}
+			 if ($Myd=="")
+				 $Myd = "สวัสดีครับ มาตรฐานการก่อสร้างระบบจำหน่ายเป็นเรื่องสำคัญ สงสัยเรื่องไหนเรามีคำตอบ พิมพ์ แรงสูง หม้อแปลง แรงต่ำ หรือคลิกที่ลิ้ง เพื่อดูวิธีการใช้งาน 
+https://drive.google.com/open?id=0B4BTAaYsG0CpMF9VRUExRWhZLUU 
+พบปัญหาการใช้งานหรือมีคำติชม ข้อเสนอแนะเพิ่มเติมติดต่อ 
+นายนัทธพงศ์ เจริญกิจพิเชียร 
+วิศวกรระดับ 5 ผกส.กฟอ.พธร. 
+ เบอร์ดาวเทียม 14850 
+LINE : tueseed 
+email : nattapong.cha@pea.co.th,tue_seed@hotmail.com 
+หรือ โทร 095-5579848";
                 // Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => "dfdkakl;j"//$Myd    //."  [".$KVA." KVA]"
-				//'type' => 'template',
-				//'altText' => "this is a buttons template",				
-				//'template'{
-			//	'type' => 'buttons',
-			//	'text' => "กรุณาเลือก",
-			//	'actions'= [
-                                             {
-                            //                  'type'=> 'message',
-                         //                     'label'=> "Buy",
-                            //                  'text'=> "action=buy&itemid=123"
-                        //                         },
-                                //               {
-                                  //             'type'=> 'message',
-                                    //           'label'=> "Add to cart",
-                                      //        'text'=> "action=add&itemid=124"
-                                        //         },
-                                          //            ];
-			//	}
-				
+				'text' => $Myd    //."  [".$KVA." KVA]"
 			];
+
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
@@ -57,6 +52,7 @@ if (!is_null($events['events'])) {
 			];
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
+
 			$ch = curl_init($url);
 			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -65,6 +61,7 @@ if (!is_null($events['events'])) {
 			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 			$result = curl_exec($ch);
 			curl_close($ch);
+
 			echo $result . "\r\n";
 		
 			
