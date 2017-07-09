@@ -43,11 +43,16 @@ if (!is_null($events['events'])) {
                                                          array(
                                                              'type'=> 'message',
                                                                   'label'=> 'หมวดที่ 1',
-                                                                   'text'=> 'yes'
+                                                                   'text'=> '8205'
                                                                        ),
                                                           array(
                                                                 'type'=> 'message',
                                                                 'label'=> 'หมวดที่ 2',
+                                                                'text'=> 'no'
+                                                                ),
+							     array(
+                                                                'type'=> 'message',
+                                                                'label'=> 'หมวดที่ 3',
                                                                 'text'=> 'no'
                                                                 )
                                                              )
