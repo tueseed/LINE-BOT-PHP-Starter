@@ -37,28 +37,53 @@ if (!is_null($events['events'])) {
 					 'type'=> 'template',
                                           'altText'=> 'ระเบียบก่อสร้างปี 59 กรุณาเลือกหมวด',
                                            'template'=>array (
-                                              'type'=> 'buttons',
-                                                 'text'=> 'ระเบียบก่อสร้างปี 59 กรุณาเลือกหมวด',
-                                                    'actions'=>array (
-                                                         array(
-                                                                  'type'=> 'message',
-                                                                  'label'=> 'หมวดที่1',
-                                                                   'text'=> 'หมวดที่ 1'
-                                                                       ),
-                                                          array(
-                                                                'type'=> 'message',
-                                                                'label'=> 'หมวดที่2',
-                                                                'text'=> 'หมวดที่ 2'
-                                                                ),
-							   array(
-                                                                'type'=> 'message',
-                                                                'label'=> 'หมวดที่3',
-                                                                'text'=> 'หมวดที่ 3'
-                                                                )
-							  )//action
-                                                            )//array 
+                                                             'type'=> 'carousel',
+                                                // 'text'=> 'ระเบียบก่อสร้างปี 59 กรุณาเลือกหมวด',
+						             'columns'=> [
+								     {
+								    'text'=> 'ระเบียบก่อสร้างปี 59 กรุณาเลือกหมวด',
+                                                                    'actions'=>array (
+                                                                                      array(
+                                                                                            'type'=> 'message',
+                                                                                            'label'=> 'หมวดที่1',
+                                                                                            'text'=> 'หมวดที่ 1'
+                                                                                            ),
+                                                                                      array(
+                                                                                            'type'=> 'message',
+                                                                                            'label'=> 'หมวดที่2',
+                                                                                            'text'=> 'หมวดที่ 2'
+                                                                                            ),
+							                              array(
+                                                                                            'type'=> 'message',
+                                                                                             'label'=> 'หมวดที่3',
+                                                                                               'text'=> 'หมวดที่ 3'
+                                                                                             )
+							                              )//action col1
+								     },
+								     {
+								    'text'=> 'ระเบียบก่อสร้างปี 59 กรุณาเลือกหมวด',
+                                                                    'actions'=>array (
+                                                                                      array(
+                                                                                            'type'=> 'message',
+                                                                                            'label'=> 'หมวดที่1',
+                                                                                            'text'=> 'หมวดที่ 1'
+                                                                                            ),
+                                                                                      array(
+                                                                                            'type'=> 'message',
+                                                                                            'label'=> 'หมวดที่2',
+                                                                                            'text'=> 'หมวดที่ 2'
+                                                                                            ),
+							                              array(
+                                                                                            'type'=> 'message',
+                                                                                             'label'=> 'หมวดที่3',
+                                                                                               'text'=> 'หมวดที่ 3'
+                                                                                             )
+							                              )//action col1
+								     }
+								     ]
+                                                            )//array templete
 				                    
-                                            ); //array  
+                                            ); //array messages 
 			
 			 }//if
 		
