@@ -40,7 +40,7 @@ if (!is_null($events['events'])) {
                                                              'type'=> 'carousel',
                                                 // 'text'=> 'ระเบียบก่อสร้างปี 59 กรุณาเลือกหมวด',
 						             'columns'=> array(
-								     (
+								   array(
 								    'text'=> 'ระเบียบก่อสร้างปี 59 กรุณาเลือกหมวด',
                                                                     'actions'=>array (
                                                                                       array(
@@ -60,7 +60,7 @@ if (!is_null($events['events'])) {
                                                                                              )
 							                              )//action col1
 								     ),
-								     (
+								     array(
 								    'text'=> 'ระเบียบก่อสร้างปี 59 กรุณาเลือกหมวด',
                                                                     'actions'=>array (
                                                                                       array(
