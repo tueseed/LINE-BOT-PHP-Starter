@@ -60,7 +60,8 @@ if (!is_null($events['events'])) {
                                                                 'text'=> 'หมวดที่ 3'
                                                                 )
 							  )//action
-                                                            )//array }
+                                                            )//array 
+				                     }
                                             ); //array  
 			
 			 }//if
