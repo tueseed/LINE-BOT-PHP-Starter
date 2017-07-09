@@ -34,11 +34,6 @@ if (!is_null($events['events'])) {
 			if ($Myd=="") {
 		                // Build message to reply back
 			$messages = array(
-				array(
-					'type' => 'text',
-				        'text' => 'fkdlsnslk'
-					),
-				array(
 					 'type'=> 'template',
                                           'altText'=> 'ระเบียบก่อสร้างปี 59 กรุณาเลือกหมวด',
                                            'template'=>array (
@@ -62,7 +57,7 @@ if (!is_null($events['events'])) {
                                                                 )
 							  )//action
                                                             )//array 
-				                 )    
+				                    
                                             ); //array  
 			
 			 }//if
