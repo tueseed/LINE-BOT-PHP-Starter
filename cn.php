@@ -34,6 +34,11 @@ if (!is_null($events['events'])) {
 			if ($Myd=="") {
 		                // Build message to reply back
 			$messages = array(
+				array(
+					'type' => 'text',
+				        'text' => "fkdlsnslk"
+					),
+				array(
 					 'type'=> 'template',
                                           'altText'=> 'ระเบียบก่อสร้างปี 59 กรุณาเลือกหมวด',
                                            'template'=>array (
@@ -41,7 +46,7 @@ if (!is_null($events['events'])) {
                                                  'text'=> 'ระเบียบก่อสร้างปี 59 กรุณาเลือกหมวด',
                                                     'actions'=>array (
                                                          array(
-                                                             'type'=> 'message',
+                                                                  'type'=> 'message',
                                                                   'label'=> 'หมวดที่1',
                                                                    'text'=> 'หมวดที่ 1'
                                                                        ),
@@ -50,14 +55,14 @@ if (!is_null($events['events'])) {
                                                                 'label'=> 'หมวดที่2',
                                                                 'text'=> 'หมวดที่ 2'
                                                                 ),
-							     array(
+							   array(
                                                                 'type'=> 'message',
                                                                 'label'=> 'หมวดที่3',
                                                                 'text'=> 'หมวดที่ 3'
                                                                 )
 							  )//action
                                                             )//array 
-				                     
+				                 )    
                                             ); //array  
 			
 			 }//if
