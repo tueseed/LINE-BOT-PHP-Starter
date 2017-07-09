@@ -39,10 +39,38 @@ LINE : tueseed
 email : nattapong.cha@pea.co.th,tue_seed@hotmail.com 
 หรือ โทร 095-5579848";
                 // Build message to reply back
-			$messages = [
-				'type' => 'text',
-				'text' => $Myd    //."  [".$KVA." KVA]"
-			];
+			$messages = array(
+      'type'=> 'template',
+      'altText'=> 'this is a confirm template',
+    'template'=>array (
+         'type'=> 'confirm',
+         'text'=> 'Are you sure?',
+         'actions'=>array (
+      array(
+        'type'=> 'message',
+        'label'=> 'Yes',
+        'text'=> 'yes'
+      ),
+      array(
+        'type'=> 'message',
+        'label'=> 'No',
+        'text'=> 'no'
+      )
+     )
+     )
+        );      //[
+				//'type' => 'text',
+				//'text' => $Myd    //."  [".$KVA." KVA]"
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			//];
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
