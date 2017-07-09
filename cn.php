@@ -49,7 +49,7 @@ if (!is_null($events['events'])) {
                                             );   
 			
 			 }
-			if ($Myd<>""){
+			else{
 			$messages[
 				'type' => 'text',
 				'text' => $Myd    //."  [".$KVA." KVA]"
