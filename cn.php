@@ -36,7 +36,7 @@ if (!is_null($events['events'])) {
 			$messages = array(
 				array(
 					'type' => 'text',
-				        'text' => "fkdlsnslk"
+				        'text' => 'fkdlsnslk'
 					),
 				array(
 					 'type'=> 'template',
