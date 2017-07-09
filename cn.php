@@ -41,19 +41,19 @@ email : nattapong.cha@pea.co.th,tue_seed@hotmail.com
                 // Build message to reply back
 			$messages = array(
       'type'=> 'template',
-      'altText'=> 'this is a confirm template',
+      'altText'=> 'ระเบียบก่อสร้างปี 59 กรุณาเลือกหมวด',
     'template'=>array (
-         'type'=> 'confirm',
-         'text'=> 'Are you sure?',
+         'type'=> 'buttons',
+         'text'=> 'ระเบียบก่อสร้างปี 59 กรุณาเลือกหมวด',
          'actions'=>array (
       array(
         'type'=> 'message',
-        'label'=> 'Yes',
+        'label'=> 'หมวดที่ 1',
         'text'=> 'yes'
       ),
       array(
         'type'=> 'message',
-        'label'=> 'No',
+        'label'=> 'หมวดที่ 2',
         'text'=> 'no'
       )
      )
