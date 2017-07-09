@@ -34,7 +34,11 @@ if (!is_null($events['events'])) {
 			if ($Myd=="") {
 		                // Build message to reply back
 			$messages = array(
-                                         'type'=> 'template',
+				{
+				'type' => 'text',
+				'text' => "testtesttesttesttetsttesttest"   
+				}
+				{ 'type'=> 'template',
                                           'altText'=> 'ระเบียบก่อสร้างปี 59 กรุณาเลือกหมวด',
                                            'template'=>array (
                                               'type'=> 'buttons',
@@ -55,11 +59,11 @@ if (!is_null($events['events'])) {
                                                                 'label'=> 'หมวดที่ 3',
                                                                 'text'=> 'หมวดที่ 3'
                                                                 )
-							  )
-                                                            )
-                                            );   
+							  )//action
+                                                            )//array }
+                                            ); //array  
 			
-			 }
+			 }//if
 		
 			//$messages[
 			//	'type' => 'text',
