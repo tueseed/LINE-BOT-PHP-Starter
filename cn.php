@@ -42,17 +42,17 @@ if (!is_null($events['events'])) {
                                                     'actions'=>array (
                                                          array(
                                                              'type'=> 'message',
-                                                                  'label'=> 'หมวดที่ 1',
+                                                                  'label'=> 'หมวดที่1 สำรวจออกแบประมาณการส',
                                                                    'text'=> 'หมวดที่ 1'
                                                                        ),
                                                           array(
                                                                 'type'=> 'message',
-                                                                'label'=> 'หมวดที่ 2',
+                                                                'label'=> 'หมวดที่2 การดำเนินการก่อสร้าง',
                                                                 'text'=> 'หมวดที่ 2'
                                                                 ),
 							     array(
                                                                 'type'=> 'message',
-                                                                'label'=> 'หมวดที่ 3',
+                                                                'label'=> 'หมวดที่3 อำนาจอนุมัติ',
                                                                 'text'=> 'หมวดที่ 3'
                                                                 )
 							  )//action
