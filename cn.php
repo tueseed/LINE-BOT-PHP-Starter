@@ -59,6 +59,7 @@ if (!is_null($events['events'])) {
                                                                                             'text'=> 'หมวดที่ 2'
                                                                                             )
                                                                                       )//action col2
+							             ),
 							              array(
 								    'text'=> 'หมวดที่3 อำนาจอนุมัติ',
                                                                     'actions'=>array (
