@@ -39,6 +39,7 @@ if (!is_null($events['events'])) {
                                            'template'=>array (
                                                              'type'=> 'carousel',
                                                          'columns'=> array(
+								            'title'=>'ระเบียบก่อสร้างปี59',
 								   array(
 								    'text'=> 'หมวดที่1 สำรวจออกแบบ ประมาณการ',
                                                                     'actions'=>array (
