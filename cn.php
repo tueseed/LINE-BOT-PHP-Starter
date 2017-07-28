@@ -39,8 +39,9 @@ if (!is_null($events['events'])) {
                                            'template'=>array (
                                                              'type'=> 'carousel',
                                                          'columns'=> array(
-								            'title'=>'ระเบียบก่อสร้างปี59',
-								   array(
+							   
+						                    array(
+								    'title'=>'ระเบียบก่อสร้างปี59 กรุณาเลือกหมวด',    
 								    'text'=> 'หมวดที่1 สำรวจออกแบบ ประมาณการ',
                                                                     'actions'=>array (
                                                                                       array(
@@ -51,6 +52,7 @@ if (!is_null($events['events'])) {
                                                                                       )//action col1
 								     ),
 								     array(
+							            'title'=>'ระเบียบก่อสร้างปี59 กรุณาเลือกหมวด', 
 								    'text'=> 'หมวดที่2 การดำเนินการก่อสร้าง',
                                                                     'actions'=>array (
                                                                                       array(
@@ -61,6 +63,7 @@ if (!is_null($events['events'])) {
                                                                                       )//action col2
 							             ),
 							              array(
+							           'title'=>'ระเบียบก่อสร้างปี59 กรุณาเลือกหมวด', 
 								    'text'=> 'หมวดที่3 อำนาจอนุมัติ',
                                                                     'actions'=>array (
                                                                                       array(
