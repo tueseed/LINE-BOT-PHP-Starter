@@ -47,7 +47,7 @@ if (!is_null($events['events'])) {
                                                                                       array(
                                                                                             'type'=> 'message',
                                                                                             'label'=> 'เลือก',
-                                                                                            'text'=> 'หมวดที่ 1'
+                                                                                            'text'=> 'คุณเลือกหมวดที่ 1'
                                                                                             )
                                                                                       )//action col1
 								     ),
@@ -58,7 +58,7 @@ if (!is_null($events['events'])) {
                                                                                       array(
                                                                                             'type'=> 'message',
                                                                                             'label'=> 'เลือก',
-                                                                                            'text'=> 'หมวดที่ 2'
+                                                                                            'text'=> 'คุณเลือกหมวดที่ 2'
                                                                                             )
                                                                                       )//action col2
 							             ),
@@ -69,7 +69,7 @@ if (!is_null($events['events'])) {
                                                                                       array(
                                                                                             'type'=> 'message',
                                                                                             'label'=> 'เลือก',
-                                                                                            'text'=> 'หมวดที่ 3'
+                                                                                            'text'=> 'คุณเลือกหมวดที่ 3'
                                                                                             )
                                                                                       )//action col2
 								     )
