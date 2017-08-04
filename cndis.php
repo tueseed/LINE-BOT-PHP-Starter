@@ -6,7 +6,7 @@ $text = file('cndis.txt');
 foreach($text as $index=>$value){
  echo $value."<br />";
 }
-$Ti = date("H:i:s");
+$Ti = date("H:i:s",mktime(date("H")+7, date("i")+0, date("s")+0));
 $Da = date("d.m.y.O");
 echo $Ti;
 echo $Da;
