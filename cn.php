@@ -114,7 +114,7 @@ $Ti = date("H:i:s");
 $Da = date("d.m.y");
 $strFileName = "cndis.txt";
 $objFopen = fopen($strFileName, 'a');
-$strText1 = "\n\r"."  ".$Da."  ".$Ti."  ".$Myd;
+$strText1 = "\n\r"."  ".$Da."  ".$Ti."  ".$findName;
 fwrite($objFopen, $strText1);
 fclose($objFopen);
 echo "OK";
