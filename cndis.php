@@ -1,5 +1,5 @@
 <?php
-$file = "Bang.png"; //Let say If I put the file name Bang.png
+$file = "cndis.txt"; //Let say If I put the file name Bang.png
 echo "<a href='download.php?nama=".$file."'>donload</a> ";
 
 $text = file('cndis.txt');
