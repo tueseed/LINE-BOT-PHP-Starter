@@ -7,7 +7,7 @@ foreach($text as $index=>$value){
  echo $value."<br />";
 }
 $Ti = date("H:i:s");
-$Da = date("d.m.y");
+$Da = date("d.m.y.O");
 echo $Ti;
 echo $Da;
 ?>
