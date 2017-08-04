@@ -3,7 +3,7 @@ $name= $_GET['nama'];
 download($name);
 
 function download($name){
-$file = $nama_fail;
+
 
 if (file_exists($file)) {
     header('Content-Description: File Transfer');
