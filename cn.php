@@ -110,14 +110,18 @@ if (!is_null($events['events'])) {
 		}
 	}
 	//get display name
-$bot = new \LINE\LINEBot(new CurlHTTPClient($access_token),['channelSecret' => '603db280479abf3a9d6ea3a2c628694f']);
-$res = $bot->getProfile($userid);
-if ($res->isSucceeded()) {
-    $profile = $res->getJSONDecodedBody();
-    $displayName = $profile['displayName'];
-    $statusMessage = $profile['statusMessage'];
-    $pictureUrl = $profile['pictureUrl'];
-	$Ti = date("H:i:s",mktime(date("H")+7, date("i")+0, date("s")+0));
+//$bot = new \LINE\LINEBot(new CurlHTTPClient($access_token),['channelSecret' => '603db280479abf3a9d6ea3a2c628694f']);
+//$res = $bot->getProfile($userid);
+//if ($res->isSucceeded()) {
+ //   $profile = $res->getJSONDecodedBody();
+ //   $displayName = $profile['displayName'];
+ //   $statusMessage = $profile['statusMessage'];
+ //   $pictureUrl = $profile['pictureUrl'];
+	
+//}
+//get display name end
+}
+$Ti = date("H:i:s",mktime(date("H")+7, date("i")+0, date("s")+0));
 $Da = date("d.m.y");
 $strFileName = "cndis.txt";
 $objFopen = fopen($strFileName, 'a');
@@ -125,10 +129,6 @@ $findName1 = iconv("tis-620","utf-8",$findName);
 $strText1 = "\n\r"."  ".$Da."  ".$Ti."  ".$findName1.$displayName;
 fwrite($objFopen, $strText1);
 fclose($objFopen);
-}
-//get display name end
-}
-
 
 
 echo "OK";
