@@ -8,7 +8,7 @@ echo "\nสถานะ:"." เวลา  ".$Ti."  วันที่  ".$Da."\n
 
 $text = file('cndis.csv');
 foreach($text as $index=>$value){
- echo $value."<br />";
+ echo "\n".$value."<br />";
 }
 
 ?>
