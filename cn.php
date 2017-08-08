@@ -6,19 +6,8 @@ $content = file_get_contents('php://input');
 // Parse JSON
 $events = json_decode($content, true);
 // Validate parsed JSON data
-if (!is_null($events['events'])) {
-	// Loop through each event
-	foreach ($events['events'] as $event) {
-		// Reply only when message sent is in 'text' format
-		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
-			// Get text sent
-			$text = $event['message']['text'];
-			$userid = $event['source']['userId'];
-			// Get replyToken
-			$replyToken = $event['replyToken'];
-			
-			//get display 
-				
+
+//get display 
 $secret = '603db280479abf3a9d6ea3a2c628694f';
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $secret]);
@@ -29,12 +18,20 @@ if ($res->isSucceeded()) {
     $statusMessage = $profile['statusMessage'];
     $pictureUrl = $profile['pictureUrl'];
 }
-//get display end		
-			
-	
-			
-			
-            $csv = array_map('str_getcsv', file('sta.csv'));
+//get display end	
+
+
+if (!is_null($events['events'])) {
+	// Loop through each event
+	foreach ($events['events'] as $event) {
+		// Reply only when message sent is in 'text' format
+		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
+			// Get text sent
+			$text = $event['message']['text'];
+			$userid = $event['source']['userId'];
+			// Get replyToken
+			$replyToken = $event['replyToken'];
+	     $csv = array_map('str_getcsv', file('sta.csv'));
             $findName = iconv("utf-8","tis-620",$text);
 			//$findName = strtoupper($findName);
             foreach($csv as $values)
