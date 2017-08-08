@@ -17,6 +17,25 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 			
+			//get display 
+				
+                       $secret = '603db280479abf3a9d6ea3a2c628694f';
+$bot = new \LINE\LINEBot(new CurlHTTPClient($access_token), [
+    'channelSecret' => $secret
+]);
+
+$res = $bot->getProfile($userid);
+if ($res->isSucceeded()) {
+    $profile = $res->getJSONDecodedBody();
+    $displayName = $profile['displayName'];
+    $statusMessage = $profile['statusMessage'];
+    $pictureUrl = $profile['pictureUrl'];
+}
+//get display end		
+			
+	
+			
+			
             $csv = array_map('str_getcsv', file('sta.csv'));
             $findName = iconv("utf-8","tis-620",$text);
 			//$findName = strtoupper($findName);
@@ -27,7 +46,7 @@ if (!is_null($events['events'])) {
                  $Myd = iconv("tis-620","utf-8",$values[0]);  // index 1 contains the googlemap link  
 		     $messages=[
 				'type' => 'text',
-				'text' => $userid.$Myd    //."  [".$KVA." KVA]"
+				'text' => $displayName.$Myd    //."  [".$KVA." KVA]"
 						
 			];
 	     }
