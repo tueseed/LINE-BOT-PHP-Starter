@@ -20,12 +20,12 @@ $objCSV = fopen("cndis.csv", "r");
 ?>
 <table width="600" border="1">
   <tr>
-    <th width="91"> <div align="center">CustomerID </div></th>
-    <th width="98"> <div align="center">Name </div></th>
-    <th width="198"> <div align="center">Email </div></th>
-    <th width="97"> <div align="center">CountryCode </div></th>
-    <th width="59"> <div align="center">Budget </div></th>
-    <th width="71"> <div align="center">Used </div></th>
+    <th width="91"> <div align="center">เวลา </div></th>
+    <th width="98"> <div align="center">วันที่ </div></th>
+    <th width="198"> <div align="center">คำที่ใช้ค้นหา </div></th>
+    <th width="97"> <div align="center">userid </div></th>
+    //<th width="59"> <div align="center">Budget </div></th>
+    //<th width="71"> <div align="center">Used </div></th>
   </tr>
 <?php
 while (($objArr = fgetcsv($objCSV, 1000, ",")) !== FALSE) {
@@ -35,8 +35,8 @@ while (($objArr = fgetcsv($objCSV, 1000, ",")) !== FALSE) {
     <td><?php echo $objArr[1];?></td>
     <td><?php echo $objArr[2];?></td>
     <td><div align="center"><?php echo $objArr[3];?></div></td>
-    <td align="right"><?php echo $objArr[4];?></td>
-    <td align="right"><?php echo $objArr[5];?></td>
+   // <td align="right"><?php echo $objArr[4];?></td>
+    //<td align="right"><?php echo $objArr[5];?></td>
   </tr>
 <?php
 }
