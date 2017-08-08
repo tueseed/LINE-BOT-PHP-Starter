@@ -13,6 +13,7 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
+			$userid = $event['user']['userId'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 			
@@ -26,7 +27,7 @@ if (!is_null($events['events'])) {
                  $Myd = iconv("tis-620","utf-8",$values[0]);  // index 1 contains the googlemap link  
 		     $messages=[
 				'type' => 'text',
-				'text' => $Myd    //."  [".$KVA." KVA]"
+				'text' => $userid.$Myd    //."  [".$KVA." KVA]"
 						
 			];
 	     }
