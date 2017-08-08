@@ -126,7 +126,7 @@ $Da = date("d.m.y");
 $strFileName = "cndis.txt";
 $objFopen = fopen($strFileName, 'a');
 $findName1 = iconv("tis-620","utf-8",$findName);
-$strText1 = "\n\r"."  ".$Da."  ".$Ti."  ".$findName1.$displayName;
+$strText1 = "\n\r"."  ".$Da."  ".$Ti."  ".$findName1.$userid;
 fwrite($objFopen, $strText1);
 fclose($objFopen);
 
