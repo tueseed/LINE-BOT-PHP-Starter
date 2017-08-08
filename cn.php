@@ -19,15 +19,16 @@ if (!is_null($events['events'])) {
 			
 			//get display 
 				
-//$secret = '603db280479abf3a9d6ea3a2c628694f';
-//$bot = new \LINE\LINEBot(new CurlHTTPClient($access_token),['channelSecret' => $secret]);
-//$res = $bot->getProfile($userid);
-//if ($res->isSucceeded()) {
-  //  $profile = $res->getJSONDecodedBody();
-   // $displayName = $profile['displayName'];
-   // $statusMessage = $profile['statusMessage'];
-   // $pictureUrl = $profile['pictureUrl'];
-//}
+$secret = '603db280479abf3a9d6ea3a2c628694f';
+$httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
+$bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $secret]);
+$res = $bot->getProfile($userid);
+if ($res->isSucceeded()) {
+    $profile = $res->getJSONDecodedBody();
+   $displayName = $profile['displayName'];
+    $statusMessage = $profile['statusMessage'];
+    $pictureUrl = $profile['pictureUrl'];
+}
 //get display end		
 			
 	
