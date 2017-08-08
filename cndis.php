@@ -9,10 +9,6 @@ echo "<a href='download.php?nama=".$file."'>donload</a> ";
 $Ti = date("H:i:s",mktime(date("H")+7, date("i")+0, date("s")+0));
 $Da = date("d.m.y");
 echo "\nสถานะ:"." เวลา  ".$Ti."  วันที่  ".$Da."\n";
-$text = file('cndis.csv');
-foreach($text as $index=>$value){
- echo $value."<br />";
-}
 ?>
 <?php
 $objCSV = fopen("cndis.csv", "r");
