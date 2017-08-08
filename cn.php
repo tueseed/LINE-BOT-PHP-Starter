@@ -19,11 +19,8 @@ if (!is_null($events['events'])) {
 			
 			//get display 
 				
-                       $secret = '603db280479abf3a9d6ea3a2c628694f';
-$bot = new \LINE\LINEBot(new CurlHTTPClient($access_token), [
-    'channelSecret' => $secret
-]);
-
+$secret = '603db280479abf3a9d6ea3a2c628694f';
+$bot = new \LINE\LINEBot(new CurlHTTPClient($access_token),['channelSecret' => $secret]);
 $res = $bot->getProfile($userid);
 if ($res->isSucceeded()) {
     $profile = $res->getJSONDecodedBody();
