@@ -126,7 +126,7 @@ $Da = date("d.m.y");
 $strFileName = "cndis.csv";
 $objFopen = fopen($strFileName, 'a');
 $findName1 = iconv("tis-620","utf-8",$findName);
-$strText1 = "\r".$Da.",".$Ti.",".$findName1.",".$userid;
+$strText1 = "\n".$Da.",".$Ti.",".$findName1.",".$userid;
 fwrite($objFopen, $strText1);
 fclose($objFopen);
 
