@@ -109,8 +109,7 @@ if (!is_null($events['events'])) {
 			
 		}
 	}
-}
-//get display name
+	//get display name
 $bot = new \LINE\LINEBot(new CurlHTTPClient($access_token),['channelSecret' => '603db280479abf3a9d6ea3a2c628694f']);
 $res = $bot->getProfile($userid);
 if ($res->isSucceeded()) {
@@ -120,6 +119,8 @@ if ($res->isSucceeded()) {
     $pictureUrl = $profile['pictureUrl'];
 }
 //get display name end
+}
+
 
 $Ti = date("H:i:s",mktime(date("H")+7, date("i")+0, date("s")+0));
 $Da = date("d.m.y");
