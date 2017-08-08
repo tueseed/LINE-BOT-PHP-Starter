@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>ThaiCreate.Com PHP & Read CSV</title>
+<title>สถิติการใช้งาน Pea Smart Query(ระเบียบก่อสร้างปี 59)</title>
 </head>
 <body>
 <?php
@@ -8,7 +8,7 @@ $file = "cndis.csv";
 echo "<a href='download.php?nama=".$file."'>donload</a> ";
 $Ti = date("H:i:s",mktime(date("H")+7, date("i")+0, date("s")+0));
 $Da = date("d.m.y");
-echo "\nสถานะ:"." เวลา  ".$Ti."  วันที่  ".$Da."\n";
+echo "\nสถิติการใช้งาน Pea Smart Query(ระเบียบก่อสร้างปี 59) สถานะ:"." เวลา  ".$Ti."  วันที่  ".$Da."\n";
 ?>
 <?php
 $objCSV = fopen("cndis.csv", "r");
