@@ -6,21 +6,6 @@ $content = file_get_contents('php://input');
 // Parse JSON
 $events = json_decode($content, true);
 // Validate parsed JSON data
-
-//get display 
-//$secret = '603db280479abf3a9d6ea3a2c628694f';
-//$httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
-//$bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $secret]);
-//$res = $bot->getProfile($userid);
-//if ($res->isSucceeded()) {
-//    $profile = $res->getJSONDecodedBody();
-//   $displayName = $profile['displayName'];
-//    $statusMessage = $profile['statusMessage'];
- //   $pictureUrl = $profile['pictureUrl'];
-//}
-//get display end	
-
-
 if (!is_null($events['events'])) {
 	// Loop through each event
 	foreach ($events['events'] as $event) {
@@ -41,7 +26,7 @@ if (!is_null($events['events'])) {
                  $Myd = iconv("tis-620","utf-8",$values[0]);  // index 1 contains the googlemap link  
 		     $messages=[
 				'type' => 'text',
-				'text' => $displayName.$Myd    //."  [".$KVA." KVA]"
+				'text' => $Myd    //."  [".$KVA." KVA]"
 						
 			];
 	     }
@@ -130,7 +115,7 @@ $Da = date("d.m.y");
 $strFileName = "cndis.txt";
 $objFopen = fopen($strFileName, 'a');
 $findName1 = iconv("tis-620","utf-8",$findName);
-$strText1 = "\n\r"."  ".$Da."  ".$Ti."  ".$findName1;
+$strText1 = "\n\r"."  ".$Da."  ".$Ti."  ".$findName1.$userid;
 fwrite($objFopen, $strText1);
 fclose($objFopen);
 echo "OK";
