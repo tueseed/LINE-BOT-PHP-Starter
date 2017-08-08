@@ -8,7 +8,7 @@ $file = "cndis.csv";
 echo "<a href='https://equip-location.herokuapp.com/cndis.csv'>donload</a> ";
 $Ti = date("H:i:s",mktime(date("H")+7, date("i")+0, date("s")+0));
 $Da = date("d.m.y");
-echo "\nสถิติการใช้งาน Pea Smart Query(ระเบียบก่อสร้างปี 59) สถานะ:"." เวลา  ".$Ti."  วันที่  ".$Da."\n";
+echo " สถิติการใช้งาน Pea Smart Query(ระเบียบก่อสร้างปี 59) สถานะ:"." วันที่  ".$Da."  เวลา  ".$Ti;
 ?>
 <?php
 $objCSV = fopen("cndis.csv", "r");
