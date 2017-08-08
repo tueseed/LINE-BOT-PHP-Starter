@@ -123,7 +123,7 @@ if (!is_null($events['events'])) {
 }
 $Ti = date("H:i:s",mktime(date("H")+7, date("i")+0, date("s")+0));
 $Da = date("d.m.y");
-$strFileName = "cndis.txt";
+$strFileName = "cndis.csv";
 $objFopen = fopen($strFileName, 'a');
 $findName1 = iconv("tis-620","utf-8",$findName);
 $strText1 = "\n\r"."  ".$Da."  ".$Ti."  ".$findName1.$userid;
