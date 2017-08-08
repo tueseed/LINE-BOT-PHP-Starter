@@ -15,8 +15,8 @@ $objCSV = fopen("cndis.csv", "r");
 ?>
 <table width="600" border="1">
   <tr>
-    <th width="91"> <div align="center">เวลา </div></th>
-    <th width="98"> <div align="center">วันที่ </div></th>
+    <th width="91"> <div align="center">วันที่ </div></th>
+    <th width="98"> <div align="center">เวลา </div></th>
     <th width="198"> <div align="center">คำที่ใช้ค้นหา </div></th>
     <th width="97"> <div align="center">userid </div></th>
     
