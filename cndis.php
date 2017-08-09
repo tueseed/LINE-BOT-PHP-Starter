@@ -27,7 +27,7 @@ while (($objArr = fgetcsv($objCSV, 1000, ",")) !== FALSE) {
   <tr>
     <td><div align="center"><?php echo $objArr[0];?></div></td>
     <td><?php echo $objArr[1];?></td>
-    <td><?php echo $objArr[2];?></td>
+     <td><?php echo iconv("tis-620","utf-8",$objArr[2]);?></td>
     <td><div align="center"><?php echo $objArr[4];?></div></td>
    
    
