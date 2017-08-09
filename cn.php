@@ -109,24 +109,27 @@ if (!is_null($events['events'])) {
 			
 		}
 	}
-	//get display name
-//$bot = new \LINE\LINEBot(new CurlHTTPClient($access_token),['channelSecret' => '603db280479abf3a9d6ea3a2c628694f']);
-//$res = $bot->getProfile($userid);
-//if ($res->isSucceeded()) {
- //   $profile = $res->getJSONDecodedBody();
- //   $displayName = $profile['displayName'];
- //   $statusMessage = $profile['statusMessage'];
- //   $pictureUrl = $profile['pictureUrl'];
-	
-//}
-//get display name end
+	//// getdisplay
+	$url = 'https://api.line.me/v2/bot/profile/'.$userid;
+
+   $headers = array('Authorization: Bearer ' . $access_token);
+   $ch = curl_init($url);
+   curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
+   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+   //curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+   curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+   curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+   $result = curl_exec($ch);
+   curl_close($ch);
+   $displaynmame = $result;
+	//end get
 }
 $Ti = date("H:i:s",mktime(date("H")+7, date("i")+0, date("s")+0));
 $Da = date("d.m.y");
 $strFileName = "cndis.csv";
 $objFopen = fopen($strFileName, 'a');
 $findName1 = iconv("tis-620","utf-8",$findName);
-$strText1 = "\n".$Da.",".$Ti.",".$findName1.",".$userid;
+$strText1 = "\n".$Da.",".$Ti.",".$findName1.",".$displayname;
 fwrite($objFopen, $strText1);
 fclose($objFopen);
 
