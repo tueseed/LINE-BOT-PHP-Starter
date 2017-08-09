@@ -128,8 +128,8 @@ $Ti = date("H:i:s",mktime(date("H")+7, date("i")+0, date("s")+0));
 $Da = date("d.m.y");
 $strFileName = "cndis.csv";
 $objFopen = fopen($strFileName, 'a');
-$findName1 = iconv("tis-620","utf-8",$findName);
-$strText1 = "\n".$Da.",".$Ti.",".$findName1.",".$displayname;
+//$findName1 = iconv("tis-620","utf-8",$findName);
+$strText1 = "\n".$Da.",".$Ti.",".$findName.",".$displayname;
 fwrite($objFopen, $strText1);
 fclose($objFopen);
 
