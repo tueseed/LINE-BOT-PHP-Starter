@@ -121,7 +121,7 @@ if (!is_null($events['events'])) {
    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
    $result = curl_exec($ch);
    curl_close($ch);
-   $displayname = $result;
+   $displayname = $result[1];
 	//end get
 }
 $Ti = date("H:i:s",mktime(date("H")+7, date("i")+0, date("s")+0));
