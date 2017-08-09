@@ -18,8 +18,7 @@ $objCSV = fopen("cndis.csv", "r");
     <th width="91"> <div align="center">วันที่ </div></th>
     <th width="98"> <div align="center">เวลา </div></th>
     <th width="198"> <div align="center">คำที่ใช้ค้นหา </div></th>
-    <th width="97"> <div align="center">userid </div></th>
-    <th width="97"> <div align="center">Displayname </div></th>
+       <th width="97"> <div align="center">Displayname </div></th>
     
   </tr>
 <?php
@@ -29,8 +28,8 @@ while (($objArr = fgetcsv($objCSV, 1000, ",")) !== FALSE) {
     <td><div align="center"><?php echo $objArr[0];?></div></td>
     <td><?php echo $objArr[1];?></td>
     <td><?php echo $objArr[2];?></td>
-    <td><div align="center"><?php echo $objArr[3];?></div></td>
     <td><div align="center"><?php echo $objArr[4];?></div></td>
+   
    
   </tr>
 <?php
