@@ -126,7 +126,7 @@ if (!is_null($events['events'])) {
 }
 $Ti = date("H:i:s",mktime(date("H")+7, date("i")+0, date("s")+0));
 $Da = date("d.m.y");
-$strFileName = "http://peas1.pea.co.th/photaram/cndis.csv"; //"cndis.csv";
+$strFileName = "http://peas1.pea.co.th/photaram/cndis.csv"; //"cndis.csv";//
 $objFopen = fopen($strFileName, 'a');
 //$findName1 = iconv("tis-620","utf-8",$findName);
 $strText1 = "\n".$Da.",".$Ti.",".$findName.",".$displayname;
