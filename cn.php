@@ -29,10 +29,12 @@ if (!is_null($events['events'])) {
 				'text' => $Myd    //."  [".$KVA." KVA]"
 						
 			];
+		     $findresult = "success";
 	     }
 			                                         }
 			if ($Myd=="") {
 		                // Build message to reply back
+				$findresult = "N/A";
 			$messages = array(
 					 'type'=> 'template',
                                           'altText'=> 'ระเบียบก่อสร้างปี 59 กรุณาเลือกหมวด',
@@ -129,7 +131,7 @@ $Da = date("d.m.y");
 $strFileName = "cndis.csv";
 $objFopen = fopen($strFileName, 'a');
 //$findName1 = iconv("tis-620","utf-8",$findName);
-$strText1 = "\n".$Da.",".$Ti.",".$findName.",".$displayname;
+$strText1 = "\n".$Da.",".$Ti.",".$findName.",".$findresult.",".$displayname;
 fwrite($objFopen, $strText1);
 fclose($objFopen);
 
