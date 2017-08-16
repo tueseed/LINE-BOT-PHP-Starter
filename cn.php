@@ -37,7 +37,7 @@ if (!is_null($events['events'])) {
 				$messages = array(
 			          'type'=> 'template',
                                   'altText'=> 'กรุณาเลือกภาคผนวก',
-				  'template'=> array(
+				  'template'=>array(
 					       'type'=>'buttons',
 					       'text'=>'กรุณาเลือกภาคผนวก',
 				               'actions'=>array(
@@ -48,7 +48,7 @@ if (!is_null($events['events'])) {
 					  )
 					
 					
-					)
+					);
 					  
 					  
 					  
