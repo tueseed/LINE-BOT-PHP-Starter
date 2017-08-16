@@ -73,9 +73,24 @@ if (!is_null($events['events'])) {
                                                                                             'label'=> 'เลือก',
                                                                                             'text'=> 'คุณเลือกหมวดที่ 3'
                                                                                             )
-                                                                                      )//action col2
+                                                                                      )//action col3
+								     ),
+								   array(
+							           'title'=>'ระเบียบก่อสร้างปี59 กรุณาเลือกหมวด', 
+								    'text'=> 'ภาคผนวก',
+                                                                    'actions'=>array (
+                                                                                      array(
+                                                                                            'type'=> 'message',
+                                                                                            'label'=> 'ภาพผนวก ก',
+                                                                                            'text'=> 'ภาคผนวก ก'
+                                                                                            )
+                                                                                      )//action col4
 								     )
-								     ) //array col
+								 
+								 
+								 
+								 
+								     ) //array columns
                                                             )//array templete
 				                    
                                             ); //array messages 
