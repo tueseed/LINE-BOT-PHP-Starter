@@ -83,12 +83,8 @@ if (!is_null($events['events'])) {
                                                                                             'type'=> 'message',
                                                                                             'label'=> 'ภาคผนวก ก',
                                                                                             'text'=> 'ภาคผนวก ก'
-                                                                                            ),
-									               array(
-                                                                                            'type'=> 'message',
-                                                                                            'label'=> 'ภาคผนวก ข',
-                                                                                            'text'=> 'ภาคผนวก ข'
                                                                                             )
+									               
                                                                                       )//action col4
 								     )
 								 
