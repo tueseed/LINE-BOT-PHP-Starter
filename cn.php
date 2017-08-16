@@ -33,18 +33,10 @@ if (!is_null($events['events'])) {
 	     }
 			                                         }
 			//สร้างข้อความภาคผนวก
-			if($Myd=="test"{
-				$messages = array(
-			          'type'=> 'template',
-                                  'altText'=> 'กรุณาเลือกภาคผนวก',
-				  'template'=>array(
-					       'type'=>'buttons',
-					       'text'=>'กรุณาเลือกภาคผนวก',
-				               'actions'=>array(
-						                'type'=> 'message',
-                                                                'label'=> 'ภาคผนวก ก',
-                                                                'text'=> 'ภาคผนวก ก'
-                                                                                            )
+			if($Myd=="test"){
+				$messages = array('type'=> 'template','altText'=> 'กรุณาเลือกภาคผนวก',
+				               'template'=>array('type'=>'buttons','text'=>'กรุณาเลือกภาคผนวก',
+				                         'actions'=>array('type'=> 'message','label'=> 'ภาคผนวก ก','text'=> 'ภาคผนวก ก')
 					  )
 					
 					
