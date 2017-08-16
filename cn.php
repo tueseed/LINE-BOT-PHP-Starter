@@ -33,7 +33,7 @@ if (!is_null($events['events'])) {
 	     }
 			                                         }
 			//สร้างข้อความภาคผนวก
-			if($findname=="test"){
+			if($findname=="99"){
 				$messages = array('type'=> 'template','altText'=> 'กรุณาเลือกภาคผนวก',
 				               'template'=>array('type'=>'buttons','text'=>'กรุณาเลือกภาคผนวก',
 				                         'actions'=>array('type'=> 'message','label'=> 'ภาคผนวก ก','text'=> 'ภาคผนวก ก')
@@ -45,7 +45,7 @@ if (!is_null($events['events'])) {
 					  
 					  
 					  
-					  
+				break;	  
 					  
 			}
 			//จบสร้างข้อความภาคผนวก
