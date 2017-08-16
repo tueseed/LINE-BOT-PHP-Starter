@@ -32,6 +32,35 @@ if (!is_null($events['events'])) {
 		     $findresult = "success";
 	     }
 			                                         }
+			//สร้างข้อความภาคผนวก
+			if($Myd=="test"{
+				$messages = array(
+			          'type'=> 'template',
+                                  'altText'=> 'กรุณาเลือกภาคผนวก',
+				  'template'=> array(
+					       'type'=>'buttons',
+					       'text'=>'กรุณาเลือกภาคผนวก',
+				               'actions'=>array(
+						                'type'=> 'message',
+                                                                'label'=> 'ภาคผนวก ก',
+                                                                'text'=> 'ภาคผนวก ก'
+                                                                                            )
+					  )
+					
+					
+					)
+					  
+					  
+					  
+					  
+					  
+					  
+			}
+			//จบสร้างข้อความภาคผนวก
+			
+			
+			
+			
 			if ($Myd=="") {
 		                // Build message to reply back
 				$findresult = "N/A";
