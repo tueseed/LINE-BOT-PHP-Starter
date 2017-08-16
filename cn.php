@@ -43,9 +43,9 @@ if (!is_null($events['events'])) {
 				                   'actions'=>array(
 							   
 							         array('type'=> 'message','label'=> 'ภาคผนวก ก','text'=> 'ภาคผนวก ก'),
-							         array('type'=> 'message','label'=> 'ภาคผนวก ข','text'=> 'ภาคผนวก ข')
-								   
-								   
+							         array('type'=> 'message','label'=> 'ภาคผนวก ข','text'=> 'ภาคผนวก ข'),
+								 array('type'=> 'message','label'=> 'ภาคผนวก ค','text'=> 'ภาคผนวก ค'),  
+								 array('type'=> 'message','label'=> 'ภาคผนวก ง','text'=> 'ภาคผนวก ง')  
 								   
 								   )
 					                   )
@@ -113,8 +113,8 @@ if (!is_null($events['events'])) {
                                                                     'actions'=>array (
                                                                                       array(
                                                                                             'type'=> 'message',
-                                                                                            'label'=> 'ภาคผนวก ก',
-                                                                                            'text'=> 'ภาคผนวก ก'
+                                                                                            'label'=> 'เลือก',
+                                                                                            'text'=> 'ภาคผนวก'
                                                                                             )
 									               
                                                                                       )//action col4
