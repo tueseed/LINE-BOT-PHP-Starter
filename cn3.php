@@ -43,9 +43,9 @@ if (!is_null($events['events'])) {
 				                   'actions'=>array(
 							   
 							         array('type'=> 'message','label'=> 'ภาคผนวก ก','text'=> 'ภาคผนวก ก'),
-							         array('type'=> 'message','label'=> 'ภาคผนวก ข','text'=> 'ภาคผนวก ข')
-								   
-								   
+							         array('type'=> 'message','label'=> 'ภาคผนวก ข','text'=> 'ภาคผนวก ข'),
+								 array('type'=> 'message','label'=> 'ภาคผนวก ค','text'=> 'ภาคผนวก ค'),  
+								 array('type'=> 'message','label'=> 'ภาคผนวก ง','text'=> 'ภาคผนวก ง')  
 								   
 								   )
 					                   )
@@ -113,8 +113,8 @@ if (!is_null($events['events'])) {
                                                                     'actions'=>array (
                                                                                       array(
                                                                                             'type'=> 'message',
-                                                                                            'label'=> 'ภาคผนวก ก',
-                                                                                            'text'=> 'ภาคผนวก ก'
+                                                                                            'label'=> 'เลือก',
+                                                                                            'text'=> 'ภาคผนวก'
                                                                                             )
 									               
                                                                                       )//action col4
@@ -144,7 +144,6 @@ if (!is_null($events['events'])) {
 			];
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
-
 			$ch = curl_init($url);
 			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -153,7 +152,6 @@ if (!is_null($events['events'])) {
 			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 			$result = curl_exec($ch);
 			curl_close($ch);
-
 			echo $result . "\r\n";
 		
 			
@@ -161,7 +159,6 @@ if (!is_null($events['events'])) {
 	}
 	//// getdisplay
 	$url = 'https://api.line.me/v2/bot/profile/'.$userid;
-
    $headers = array('Authorization: Bearer ' . $access_token);
    $ch = curl_init($url);
    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
@@ -182,7 +179,5 @@ $objFopen = fopen($strFileName, 'a');
 $strText1 = "\n".$Da.",".$Ti.",".$findName.",".$findresult.",".$displayname;
 fwrite($objFopen, $strText1);
 fclose($objFopen);
-
-
 echo "OK";
 ?>
